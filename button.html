@@ -1,0 +1,23 @@
+<template>
+    <button data-bind>
+        {{label}}
+    </button>
+</template>
+
+<style>
+    button { width: 200px; padding: 100px; background: blue; }
+</style>
+
+<script>
+    var data = {
+        label: "This is a button."
+    };
+
+    function __init__(){
+
+    }
+
+    function render(data){
+        this.firstElementChild.innerHTML = data.label;
+    }
+</script>
